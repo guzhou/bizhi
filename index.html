@@ -170,38 +170,6 @@
     </style>
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.4/lib/darkmode-js.min.js"></script>
 <!--<script type="text/javascript" charset="UTF-8" src="https://api.isoyu.com/js/v1.js" exte-id="548" data-size="36x140" data-color="#FF7119" data-show="1"></script>-->
-<div id="returntop">返回顶部</div>
-<script type="text/javascript">
-/*javascript函数，控制显示块的位置和显隐，此函数只要在body标签之间即可*/
-var getDiv=document.getElementById('returntop');
-getDiv.onclick=function(){
-    window.scrollTo(0,0);
-}
-window.onscroll=function(){
-    if(document.documentElement.scrollTop){
-        getDiv.style.display="block";
-    }else if(document.body.scrollTop){
-        getDiv.style.display="block";
-    }else{
-        getDiv.style.display="none";    
-    }
-}
-function getWinSize(){
-    var winHeight=window.innerHeight,winWidth=window.innerWidth;
-    if(document.documentElement.clientHeight){
-        winHeight=document.documentElement.clientHeight;
-        winWidth=document.documentElement.clientWidth;
-    }else{
-        winHeight=document.body.clientHeight;
-        winWidth=document.body.clientWidth;
-    }
-    getDiv.style.bottom=10+"px";  /*距离浏览器底部10px*/
-    getDiv.style.right=100+"px";  /*距离浏览器右边框100px*/
-    /*修改显示块的位置，有四个方向：top,bottom,left,right*/
-}
-getWinSize();
-window.onresize=getWinSize;
-</script>
 <div class="footer">
 <a href="https://www.doublog.com/" target="_blank">Blog</a>
 <a href="https://sae.cx/" target="_blank">Shorten</a>
@@ -209,7 +177,7 @@ window.onresize=getWinSize;
 <a href="https://daohang.eu.org" target="_blank">Webnav</a>
 <a href="https://dns.doublog.com" target="_blank">CDN</a>
 <a href="https://sj.page.dev" target="_blank">WaterMark</a>
-<a href="javascript:;">© 2007-2021 doublog.com. All Rights Reserved.</a>
+© 2007-2021 doublog.com. All Rights Reserved.</a> || <a href="javascript:scroll(0,0)">回到顶部<s/a>
 </div>
 </body>
 </html>
